@@ -1,22 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
 
 .head-navigation {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: grey;
+  background: #2ecc71;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  top: -30px;
+  transition: all .4s;
+  color: white; }
+  .head-navigation:hover {
+    top: 0; }
   .head-navigation li {
-    padding: 20px 10px;
-    transition: all 1s; }
+    padding: 10px 10px;
+    transition: all .4s;
+    cursor: pointer; }
     .head-navigation li:hover {
-      background: black;
-      color: white; }
+      background: #613d2e; }
+
+.head-content {
+  background-image: url(../img/img.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh; }
+  .head-content article {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto; }
+  .head-content .head-image {
+    align-self: flex-end; }
+  .head-content .head-text {
+    color: white;
+    width: 300px; }
+  .head-content .head-container-icons {
+    position: relative; }
+    .head-content .head-container-icons .ico {
+      position: relative;
+      background-image: url(../img/icons.png);
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      opacity: 0.4;
+      display: inline-block;
+      background-size: 250px;
+      background-color: black;
+      background-repeat: no-repeat;
+      cursor: pointer; }
+      .head-content .head-container-icons .ico:hover {
+        opacity: 0.7; }
+    .head-content .head-container-icons .head-ico1 {
+      background-position: 19px 13px; }
+    .head-content .head-container-icons .head-ico2 {
+      background-position: -91px 13px; }
+    .head-content .head-container-icons .head-ico3 {
+      background-position: -194px 13px; }
 
 main {
   display: flex;
@@ -26,5 +73,4 @@ main {
   height: 400px;
   background-color: #a5e2ff; }
   main h1, main h2, main h3 {
-    margin: 0px;
-    text-align: center; }
+    margin: 0px; }
