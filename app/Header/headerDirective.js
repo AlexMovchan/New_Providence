@@ -3,6 +3,6 @@ angular
 	.directive("headerContent", function() {
 	    return {
 		    restrict : "E",
-	        templateUrl: 'app/Header/header.html',
+	        templateUrl: 'app/header/header.html',
 	    };
 	});

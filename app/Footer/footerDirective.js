@@ -3,6 +3,6 @@ angular
 	.directive("footerContent", function() {
 	    return {
 		    restrict : "E",
-	        templateUrl: 'app/Footer/footer.html',
+	        templateUrl: 'app/footer/footer.html',
 	    };
 	});

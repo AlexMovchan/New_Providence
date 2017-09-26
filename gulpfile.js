@@ -1,20 +1,15 @@
 var gulp = require('gulp'),
-  	sass = require('gulp-sass'),
-    uglify = require('gulp-uglify'),
+    sass = require('gulp-sass'),
     webserver = require('gulp-webserver');
-
-//take require JS file and compile it to one file
-gulp.task("build", function() {
-  gulp.src('app/build/build.js')
-    .pipe(rigger())
-    .pipe(babel())
-    .pipe(gulp.dest("dist/js"))
+ 
+gulp.task('sass', function () {
+  return gulp.src('app/main.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('dist/css'));
 });
-
-gulp.task('sass', function(){
-  gulp.src('app/main.scss')
-    .pipe(sass()) // Using gulp-sass
-    .pipe(gulp.dest('dist/css/'))
+ 
+gulp.task('sass:watch', function () {
+  gulp.watch('app/**/*.scss', ['sass']);
 });
 
 gulp.task('webserver', function() {
@@ -26,15 +21,4 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('watch', ['sass'], function() {
-  gulp.watch(['app/**/*.scss'], ['sass']);
-})
-
-gulp.task('default', ['sass', 'webserver', 'watch']);
-
-
-
-
-
-
-
+gulp.task('default', ['sass', 'webserver', 'sass:watch'])
