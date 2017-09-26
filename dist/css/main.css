@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.head-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: grey;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .head-navigation li {
+    padding: 20px 10px;
+    transition: all 1s; }
+    .head-navigation li:hover {
+      background: black;
+      color: white; }
