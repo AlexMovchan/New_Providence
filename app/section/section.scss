@@ -52,9 +52,24 @@
 		width: 300px;	
 	}
 	&-article2{
+	    box-shadow: 0 0 14px 3px black;
 		width: 350px;
 		height: 350px;
 		overflow: hidden;
 		border-radius: 25px;	
 	}
+}
+
+.get_touch{
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-items: center;
+	p{
+		&:nth-child(1){
+			color: grey;
+		}
+	}
+	
 }

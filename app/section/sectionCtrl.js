@@ -1,5 +1,7 @@
 function sectionCtrl($rootScope) {
+	let vm = this;
 
+   
 
 }
 
