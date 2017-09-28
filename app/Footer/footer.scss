@@ -4,9 +4,10 @@ footer{
 	align-items: center;
 	flex-flow: row wrap;
 	background-color: #e3e3e3;
-	height: 130px;
+	min-height: 130px;
 	ul{
 		display: flex;
+		flex-flow: row wrap;
 		justify-content: center;
 		align-items: center;
 		list-style: none;
