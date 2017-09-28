@@ -62,14 +62,120 @@
 
 .get_touch{
 	width: 100%;
+	padding-bottom: 30px;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-around;
 	align-items: center;
 	p{
-		&:nth-child(1){
-			color: grey;
+		color: grey;
+		margin: 20px 0;
+		text-align: center;
+	}
+	h3{
+		&:nth-child(2){
+			margin: 20px 0;
+		}
+		&:nth-child(4){
+			margin: 30px 0 10px;
 		}
 	}
-	
+	.slide_container{
+		width: 42px;
+		height: 42px;
+		background-size: cover;
+		background-position: center;
+		&--first{
+			background-image: url(../img/slide/1.png);
+		}
+		&--second{
+			background-image: url(../img/slide/2.png);
+		}
+		&--third{
+			background-image: url(../img/slide/3.png);
+		}
+		&--fourth{
+			background-image: url(../img/slide/4.png);
+		}
+		&--fifth{
+			background-image: url(../img/slide/5.png);
+		}
+		&--sixth{
+			background-image: url(../img/slide/6.png);
+		}
+		&--seventh{
+			background-image: url(../img/slide/7.png);
+		}
+		&--eighth{
+			background-image: url(../img/slide/8.png);
+		}
+		&--ninth{
+			background-image: url(../img/slide/9.png);
+		}
+		&--tenth{
+			background-image: url(../img/slide/10.png);
+		}
+		&--eleventh{
+			background-image: url(../img/slide/11.png);
+		}
+		&--twelfth{
+			background-image: url(../img/slide/12.png);
+		}
+		&--thirteenth{
+			background-image: url(../img/slide/13.png);
+		}
+		&--fourteenth{
+			background-image: url(../img/slide/14.png);
+		}
+		&--fifteenth{
+			background-image: url(../img/slide/15.png);
+		}
+		&--sixteenth{
+			background-image: url(../img/slide/16.png);
+		}
+		&--seventeenth{
+			background-image: url(../img/slide/17.png);
+		}
+		&--eighteenth{
+			background-image: url(../img/slide/18.png);
+		}
+		&--nineteenth{
+			background-image: url(../img/slide/19.png);
+		}
+		&--twentieth{
+			background-image: url(../img/slide/20.png);
+		}
+	}
+	.ico_social{
+		position: relative;
+		background-image: url(../img/social/social.png);
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		display: inline-block;
+	    background-color: #e3e3e3;
+	    background-repeat: no-repeat;
+	    cursor: pointer;
+	    &:hover{
+	    	opacity: 0.5;
+	    }
+	    &-ico1{
+			background-position: -109px -77px;
+	    }
+	    &-ico2{
+			background-position: -147px -77px;
+	    }
+	    &-ico3{
+			background-position: -850px -77px;
+	    }
+	    &-ico4{
+			background-position: -30px -77px;
+	    }
+	    &-ico5{
+			background-position: -343px -77px;
+	    }
+	    &-ico6{
+			background-position: -537px -77px;
+	    }
+	}
 }

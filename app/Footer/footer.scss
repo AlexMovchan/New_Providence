@@ -1,0 +1,25 @@
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	background-color: #e3e3e3;
+	height: 130px;
+	ul{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		a{
+			padding: 15px;
+			text-decoration: none;
+			color: #808080;
+			&:hover{
+				text-decoration: none;
+				color: black;
+			}
+		}
+	}
+}
