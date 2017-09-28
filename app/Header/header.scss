@@ -42,7 +42,19 @@ body{
     	margin: auto;
     }
     .head-image {
+    	position: relative;
     	align-self: flex-end;
+    	.phone-img{
+    		position: absolute;
+    		background-image: url(../img/img.png);
+    		background-position: center;
+    		background-size: cover;
+    		border-radius: 2px;
+		    width: 163px;
+		    height: 243px;
+		    left: 65px;
+		    top: 67px;
+    	}
     }
     .head-text{
     	color: white;

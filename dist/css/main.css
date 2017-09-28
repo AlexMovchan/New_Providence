@@ -38,7 +38,18 @@ body {
     align-items: center;
     margin: auto; }
   .head-content .head-image {
+    position: relative;
     align-self: flex-end; }
+    .head-content .head-image .phone-img {
+      position: absolute;
+      background-image: url(../img/img.png);
+      background-position: center;
+      background-size: cover;
+      border-radius: 2px;
+      width: 163px;
+      height: 243px;
+      left: 65px;
+      top: 67px; }
   .head-content .head-text {
     color: white;
     width: 300px; }

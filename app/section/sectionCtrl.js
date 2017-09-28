@@ -7,7 +7,9 @@ function sectionCtrl($rootScope) {
 	    responsiveClass:true,
 	    loop: true,
 	    nav: false,
-	    items: 20
+	    items: 20,
+	    autoplay: true,
+	    autoplayTimeout: 3000
 	})   
 
 }
